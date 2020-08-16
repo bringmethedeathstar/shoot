@@ -1,0 +1,41 @@
+{
+    "name": "bringmethedeathstar/shoot",
+    "description": "Grab a screenshot of any website from a URL",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "shoot"
+    ],
+    "support": {
+        "docs": "https://github.com/bringmethedeathstar/shoot/blob/master/README.md",
+        "issues": "https://github.com/bringmethedeathstar/shoot/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DaveP",
+            "homepage": "https://davecod.es/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "bringmethedeathstar\\shoot\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Shoot",
+        "handle": "shoot",
+        "developer": "DaveP",
+        "developerUrl": "https://davecod.es/",
+        "documentationUrl": "https://github.com/bringmethedeathstar/shoot/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/bringmethedeathstar/shoot/master/CHANGELOG.md",
+        "class": "bringmethedeathstar\\shoot\\Shoot"
+    }
+}

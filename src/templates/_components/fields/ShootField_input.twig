@@ -1,0 +1,24 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Shoot plugin for Craft CMS 3.x
+ *
+ * ShootField Field Input
+ *
+ * @author    DaveP
+ * @copyright Copyright (c) 2020 DaveP
+ * @link      https://davecod.es/
+ * @package   Shoot
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+        label: 'Some Field',
+        instructions: 'Enter some text here.',
+        id: name,
+        name: name,
+        value: value})
+}}

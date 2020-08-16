@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Shoot plugin for Craft CMS
+ *
+ * ShootField Field Settings
+ *
+ * @author    DaveP
+ * @copyright Copyright (c) 2020 DaveP
+ * @link      https://davecod.es/
+ * @package   Shoot
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("bringmethedeathstar\\shoot\\assetbundles\\shoot\\ShootAsset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}
