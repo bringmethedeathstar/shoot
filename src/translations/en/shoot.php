@@ -14,5 +14,5 @@
  * @since     1.0.0
  */
 return [
-    'Shoot plugin loaded' => 'Shoot plugin loaded',
+  'Shoot plugin loaded' => 'Shoot plugin loaded',
 ];

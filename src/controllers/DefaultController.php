@@ -20,39 +20,35 @@ use craft\web\Controller;
  * @package   Shoot
  * @since     1.0.0
  */
-class DefaultController extends Controller
-{
+class DefaultController extends Controller {
+  // Protected Properties
+  // =========================================================================
 
-    // Protected Properties
-    // =========================================================================
+  /**
+   * @var    bool|array Allows anonymous access to this controller's actions.
+   *         The actions must be in 'kebab-case'
+   * @access protected
+   */
+  protected $allowAnonymous = ['index', 'do-something'];
 
-    /**
-     * @var    bool|array Allows anonymous access to this controller's actions.
-     *         The actions must be in 'kebab-case'
-     * @access protected
-     */
-    protected $allowAnonymous = ['index', 'do-something'];
+  // Public Methods
+  // =========================================================================
 
-    // Public Methods
-    // =========================================================================
+  /**
+   * @return mixed
+   */
+  public function actionIndex() {
+    $result = 'Welcome to the DefaultController actionIndex() method';
 
-    /**
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        $result = 'Welcome to the DefaultController actionIndex() method';
+    return $result;
+  }
 
-        return $result;
-    }
+  /**
+   * @return mixed
+   */
+  public function actionDoSomething() {
+    $result = 'Welcome to the DefaultController actionDoSomething() method';
 
-    /**
-     * @return mixed
-     */
-    public function actionDoSomething()
-    {
-        $result = 'Welcome to the DefaultController actionDoSomething() method';
-
-        return $result;
-    }
+    return $result;
+  }
 }

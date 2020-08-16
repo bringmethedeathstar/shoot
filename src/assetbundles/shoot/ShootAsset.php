@@ -19,30 +19,28 @@ use craft\web\assets\cp\CpAsset;
  * @package   Shoot
  * @since     1.0.0
  */
-class ShootAsset extends AssetBundle
-{
-    // Public Methods
-    // =========================================================================
+class ShootAsset extends AssetBundle {
+  // Public Methods
+  // =========================================================================
 
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        $this->sourcePath = "@bringmethedeathstar/shoot/assetbundles/shoot/dist";
+  /**
+   * @inheritdoc
+   */
+  public function init() {
+    $this->sourcePath = "@bringmethedeathstar/shoot/assetbundles/shoot/dist";
 
-        $this->depends = [
-            CpAsset::class,
-        ];
+    $this->depends = [
+      CpAsset::class,
+    ];
 
-        $this->js = [
-            'js/Shoot.js',
-        ];
+    $this->js = [
+      'js/Shoot.js',
+    ];
 
-        $this->css = [
-            'css/Shoot.css',
-        ];
+    $this->css = [
+      'css/Shoot.css',
+    ];
 
-        parent::init();
-    }
+    parent::init();
+  }
 }

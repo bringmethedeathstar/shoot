@@ -19,30 +19,28 @@ use craft\web\assets\cp\CpAsset;
  * @package   Shoot
  * @since     1.0.0
  */
-class ShootFieldFieldAsset extends AssetBundle
-{
-    // Public Methods
-    // =========================================================================
+class ShootFieldFieldAsset extends AssetBundle {
+  // Public Methods
+  // =========================================================================
 
-    /**
-     * @inheritdoc
-     */
-    public function init()
-    {
-        $this->sourcePath = "@bringmethedeathstar/shoot/assetbundles/shootfieldfield/dist";
+  /**
+   * @inheritdoc
+   */
+  public function init() {
+    $this->sourcePath = "@bringmethedeathstar/shoot/assetbundles/shootfieldfield/dist";
 
-        $this->depends = [
-            CpAsset::class,
-        ];
+    $this->depends = [
+      CpAsset::class,
+    ];
 
-        $this->js = [
-            'js/ShootField.js',
-        ];
+    $this->js = [
+      'js/ShootField.js',
+    ];
 
-        $this->css = [
-            'css/ShootField.css',
-        ];
+    $this->css = [
+      'css/ShootField.css',
+    ];
 
-        parent::init();
-    }
+    parent::init();
+  }
 }

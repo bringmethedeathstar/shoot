@@ -20,27 +20,25 @@ use craft\base\Model;
  * @package   Shoot
  * @since     1.0.0
  */
-class Settings extends Model
-{
-    // Public Properties
-    // =========================================================================
+class Settings extends Model {
+  // Public Properties
+  // =========================================================================
 
-    /**
-     * @var string
-     */
-    public $someAttribute = 'Some Default';
+  /**
+   * @var string
+   */
+  public $someAttribute = 'Some Default';
 
-    // Public Methods
-    // =========================================================================
+  // Public Methods
+  // =========================================================================
 
-    /**
-     * @inheritdoc
-     */
-    public function rules()
-    {
-        return [
-            ['someAttribute', 'string'],
-            ['someAttribute', 'default', 'value' => 'Some Default'],
-        ];
-    }
+  /**
+   * @inheritdoc
+   */
+  public function rules() {
+    return [
+      ['someAttribute', 'string'],
+      ['someAttribute', 'default', 'value' => 'Some Default'],
+    ];
+  }
 }
